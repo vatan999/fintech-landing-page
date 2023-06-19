@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar styling */
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+h1, h2, p {
+    margin: 1.2rem 0;
+    /* color: whitesmoke; */
+}
+
+h1 {
+    font-size: 3.6rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo h1 {
+    font-size: 3.2rem;
+    color:rgb(39, 176, 39);
+    margin: 0;
+}
+
+nav {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav box-icon {
+    display: none;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul li a:hover {
+    color:rgb(39, 176, 39);
+    transition: 0.5s ease-in-out;
+}
+
+/* hero-section */
+
+.header-content {
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 8%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content h1 {
+    color: rgb(39, 176, 39);
+}
+
+.header-content p {
+    color: whitesmoke;
+}
+
+input {
+    width: 50%;
+    font-size: 1.6rem;
+    padding: 12px 20px;
+    margin:8px 0;
+}
+
+input[type=submit] {
+    width: 25%;
+    background-color: rgb(39, 176, 39);
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+
+input[type=submit]:hover {
+    width: 25%;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+
+/* about styling */
+
+.about-left, .about-middle, .about-right {
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+
+.btn {
+    background-color: rgb(39, 176, 39);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 8px 0;
+    outline: none;
+    border: none;
+}
+
+/* about - 2  */
+
+.about-2 {
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.about-2-left {
+    flex-basis: 50%;
+}
+
+.about-2-right {
+    flex-basis: 30%;
+}
+
+.about-2 .card {
+    padding: 3rem 8rem;
+    color: #222;
+    background-color: #dcdcdc;
+    margin: 1.6rem;
+    text-align: center;
+}
+
+.progress .row {
+    justify-content: center;
+}
+
+.process-content {
+    margin-top: 100px;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 2px;
+    background-color: #222;
+    margin: auto;
+    position: relative;
+}
+
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #222;
+    position: absolute;
+}
+
+.progress-bar .c1 {
+    top: -8px;
+    left: 50px;
+}
+
+.progress-bar .c2 {
+    top: -8px;
+    left: 49%;
+}
+
+.progress-bar .c3 {
+    top: -8px;
+    right: 50px;
+}
+
+.box-1, .box-2, .box-3 {
+    padding: 1.6rem;
+}
+
+.process-content .box-2 {
+    text-align: center;
+}
+
+.process-content .box-3 {
+    text-align: right;
+}
+
+.process-content h2 {
+    color: rgb(39, 176, 39);
+}
+
+/* testimony */
+
+.testimony {
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.testimony .test {
+    background-color: #505050;
+    padding: 4rem 8rem;
+    margin: 0 1rem;
+}
+
+.testimony .image {
+    height: 80px;
+    width: 80px;
+}
+
+.testimony img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact .row {
+    justify-content: center;
+}
+
+.contact form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input {
+    width: 50%;
+}
+
+.contact textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    font-size: 1.3rem;
+    resize: none;
+    color: #ccc;
+    margin: 1.2rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* footer  */
+
+footer {
+    height: 80px;
+    background-color: #222;
+    color: #ccc;
+    line-height: 80px;
+    text-align: center;
+}
+
+
+
+
+/* media queries */
+
+@media only screen and (max-width:768px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        position: relative;
+    }
+
+    nav box-icon {
+        display: block;
+        position: absolute;
+        top:18px;
+        right: 32px;
+    }
+
+    nav ul {
+        background-color: whitesmoke;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+
+    .show-menu {
+        background-color: whitesmoke;
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 2% 0;
+    }
+
+    nav ul li a {
+        color: #222;
+    }
+
+    .header-content {
+        width: 100%;
+        top: 16%;
+        left: 0;
+        text-align: center;
+        padding: 0 8px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=submit] {
+        width: 80%;
+        margin: 1.2rem auto;
+    }
+
+    .progress-bar {
+        display: none;
+    }
+
+    .process-content {
+        margin-top: 20px;
+    }
+
+    .progress .box-1,
+    .progress .box-2,
+    .progress .box-3 {
+        text-align: center;
+    }
+
+    .testimony .test {
+        margin: 1.6rem 0;
+    }
+
+    .contact form input {
+        width: 80%;
+    }
+
+    .contact textarea {
+        width: 80%;
+    }
+
+    /* about  */
+
+    .about .about-left,
+    .about .about-middle,
+    .about .about-right {
+        text-align: center;
+    }
+
+    .about-2 .about2-left {
+        text-align: center;
+    }
+
+}
